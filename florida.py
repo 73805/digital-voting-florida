@@ -17,7 +17,10 @@ for i in range(0, len(colors)):
     else:
         colors[i] = "green"
 
+plt.clf()
 plt.scatter(x, y, s=60, c=colors)
 plt.grid(True, which='both')
 plt.xlabel("Democrat Vote Change")
 plt.ylabel("Republican Vote Change")
+plt.title('Florida County Voting Shifts')
+plt.annotate("Orange -> Digital Voting Available",(30000,41000))
